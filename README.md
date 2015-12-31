@@ -29,14 +29,14 @@ Most lovely Linux DVR Platform in Japan.
 * Linux - x86 / x64
   - Debian / CentOS / Gentoo
   - sysvinit / OpenRC / systemd
-* [Node.js](nodejs.org/) `>=4.0.0`
+* [Node.js](nodejs.org/) `>=4.1.1`
 * [Mirakurun](https://github.com/kanreisa/Mirakurun)
 * Chrome / Firefox / Edge
 
 ## Warnings
 
 * **Don't** expose port 20772 on the internet, not even with NAPT.
-* **Don't** share your Chinachu outside your household.
+* **Don't** share your Chinachu outside of your household.
 
 ## Install
 
@@ -45,7 +45,7 @@ sudo npm install -g --unsafe chinachu
 ```
 This is all. Yes, magic.
 
-* Web App will launched automatically. - http:// _server-ipv4-local-addr_ :20772/
+* Web App will launched automatically. - go http:// _server-ipv4-local-addr_ :20772/
 
 ### Uninstall
 
@@ -65,7 +65,7 @@ chinachu config [server|operator|mirakuruns|ffmpeg]
 Typically, don't need edit this.
 
 * Also you can config on Web App.
-* see: [wiki/Configuration](https://github.com/kanreisa/Chinachu/wiki/Configuration)
+* see: [docs/Configuration.md](docs/Configuration.md)
 
 #### Log Stream
 
@@ -79,44 +79,9 @@ chinachu log [server|operator]
 chinachu [status|start|stop|restart]
 ```
 
-
 ## Contributing
 
-### Report an Issue
-
-* https://github.com/kanreisa/Chinachu/issues
-
-When reporting an issue we also need as much information about your environment
-that you can include. We never know what information will be pertinent when
-trying narrow down the issue. Please include least the following information:
-
-* Version of Chinachu: `sudo npm list -g chinachu`
-* Version of Mirakurun: `sudo npm list -g mirakurun`
-* Platform you're running on (Debian jessie, CentOS 7.1, ...)
-* Architecture you're running on (x86 or x64)
-
-**Please note: ARM architectures currently not supported.**
-
-### Development
-
-#### Pull Request
-
-Please PR to the [devel-air](https://github.com/kanreisa/Chinachu/tree/devel-air) branch.
-Please don't PR to the master branch it's protected.
-
-#### Build
-
-```
-npm install
-npm run tsd-install
-npm run build
-```
-
-#### Install
-
-```
-sudo npm install . -g --unsafe
-```
+[CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Slack Community
 
@@ -128,7 +93,6 @@ sudo npm install . -g --unsafe
 [Apache License, Version 2.0](LICENSE)
 
 **Commercial License/Support** is provided by [Pixely LLC](https://pixely.jp/).
-Please don't hesitate to contact: contact at pixely.jp (EN/JP)
 
 [npm-img]: https://img.shields.io/npm/v/chinachu.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/chinachu
