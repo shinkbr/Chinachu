@@ -1,0 +1,4 @@
+[submodule "src/web/libraries/flagrate"]
+	path = src/web/libraries/flagrate
+	url = git@github.com:webnium/flagrate.git
+  ignore = dirty
